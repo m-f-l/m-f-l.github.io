@@ -152,6 +152,102 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-hexo博客搭建方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/12/21/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95/">博客搭建具体步骤</a>
+    </h1>
+  
+
+        
+        <a href="/2021/12/21/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95/" class="archive-article-date">
+  	<time datetime="2021-12-20T22:58:22.852Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>安初始化博客</strong></p>
+<ul>
+<li><p>首先需要安装好node 和git（git需要先配置好）</p>
+</li>
+<li><p>安装hexo框架  npm install -g hexo-cli   </p>
+</li>
+<li><p>建里一个空文价夹 mkdir blog 创建blog目录 以blog文件夹为安装的hexo的根目录</p>
+</li>
+<li><p>初始化博客  hexo init</p>
+</li>
+<li><p>启动博客 hexo start 或 hexo s</p>
+</li>
+<li><p>创建新的文章   hexo new “我的第一篇博客”</p>
+</li>
+<li><p>返回blog目录 hexo clean（hexo-c） 清理     hexo g  生成 </p>
+</li>
+<li><p>Github创建一个新的仓库    用户名.github.io </p>
+</li>
+<li><p>找到并配置_config.yml  ==&gt; Deployment  (配置type repo branch)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: github 地址（https的如果不行，换成ssh的）</span><br><span class="line">  branch: master (如果推到github成功 看不到自己博客，那换成main试试)</span><br></pre></td></tr></table></figure></li>
+<li><p>部署   hexo deploy  或hexo d</p>
+</li>
+</ul>
+<p><strong>换主题</strong></p>
+<ul>
+<li>回到blog目录下 git clone <a target="_blank" rel="noopener" href="https://github.com/litten/hexo-theme-yilia.git">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia  </li>
+<li>修改hexo根目录下的 _config.yml 文件 ： theme: yilia </li>
+<li>清理一下  hexo c    </li>
+<li>生成 hexo g    </li>
+<li>部署到远程Github仓库  hexo d    </li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://yourgithubname.github.io/">https://YourGithubName.github.io/</a>  #查看博客 </p>
+<hr>
+<p>具体可以参考 <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Yb411a7ty?spm_id_from=333.999.0.0"></a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/12/21/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-我的第一篇文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
